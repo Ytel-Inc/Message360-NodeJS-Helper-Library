@@ -1,0 +1,5 @@
+{
+  "license": "Ytel",
+  "main": "lib/m360.js",
+  "name": "ytel"
+}
