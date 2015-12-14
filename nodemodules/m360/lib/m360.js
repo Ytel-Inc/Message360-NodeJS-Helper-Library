@@ -489,6 +489,21 @@ m360.delete_unsubscribe = function (params, callback) {
     request(action, method, params, callback);
 };
 
+//Carrier
+m360.carrier_lookup = function (params, callback) {
+    var action = 'carrier/lookup';
+    var method = 'GET';
+
+    request(action, method, params, callback);
+};
+
+m360.carrier_lookup_list = function (params, callback) {
+    var action = 'carrier/lookuplist';
+    var method = 'GET';
+
+    request(action, method, params, callback);
+};
+
 
 /**
  * XML Response Generation
