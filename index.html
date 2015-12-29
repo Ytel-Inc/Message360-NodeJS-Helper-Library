@@ -1,45 +1,53 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en-us">
   <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta charset="UTF-8">
     <title>Message360-nodejs-helper-library by Ytel-Inc</title>
-
-    <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/github-light.css">
-    <script src="javascripts/scale.fix.js"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
   </head>
   <body>
-    <div class="wrapper">
-      <header>
-        <h1 class="header">Message360-nodejs-helper-library</h1>
-        <p class="header">Official NodeJS Message360 REST API  &amp; InboundXML library</p>
+    <section class="page-header">
+      <h1 class="project-name">Message360-nodejs-helper-library</h1>
+      <h2 class="project-tagline">Official NodeJS Message360 REST API  &amp; InboundXML library</h2>
+      <a href="https://github.com/Ytel-Inc/Message360-NodeJS-Helper-Library" class="btn">View on GitHub</a>
+      <a href="https://github.com/Ytel-Inc/Message360-NodeJS-Helper-Library/zipball/master" class="btn">Download .zip</a>
+      <a href="https://github.com/Ytel-Inc/Message360-NodeJS-Helper-Library/tarball/master" class="btn">Download .tar.gz</a>
+    </section>
 
-        <ul>
-          <li class="download"><a class="buttons" href="https://github.com/Ytel-Inc/Message360-NodeJS-Helper-Library/zipball/master">Download ZIP</a></li>
-          <li class="download"><a class="buttons" href="https://github.com/Ytel-Inc/Message360-NodeJS-Helper-Library/tarball/master">Download TAR</a></li>
-          <li><a class="buttons github" href="https://github.com/Ytel-Inc/Message360-NodeJS-Helper-Library">View On GitHub</a></li>
-        </ul>
-
-        <p class="header">This project is maintained by <a class="header name" href="https://github.com/Ytel-Inc">Ytel-Inc</a></p>
-
-
-      </header>
-      <section>
-        <p><img src="http://message360.com/wordpress/wp-content/uploads/2014/08/message360.png" alt=""></p>
+    <section class="main-content">
+      <p><img src="http://message360.com/wordpress/wp-content/uploads/2014/08/message360.png" alt=""></p>
 
 <h3>
 <a id="welcome-to-the-message360-nodejs-helper-library" class="anchor" href="#welcome-to-the-message360-nodejs-helper-library" aria-hidden="true"><span class="octicon octicon-link"></span></a>Welcome to the Message360 NodeJS Helper Library</h3>
 
-<p>This is home to the Official NodeJS Message360 REST API and InboundXML Libraries. </p>
+<p>This is home to the Official NodeJS Message360 Helper Library and InboundXML Libraries. </p>
 
 <p><strong>Example:</strong></p>
 
-<div class="highlight highlight-source-js"><pre>NodeJS example</pre></div>
+<div class="highlight highlight-source-js"><pre><span class="pl-k">var</span> m360 <span class="pl-k">=</span> <span class="pl-c1">require</span>(<span class="pl-s"><span class="pl-pds">'</span>m360<span class="pl-pds">'</span></span>);
+<span class="pl-k">var</span> auth <span class="pl-k">=</span> <span class="pl-c1">require</span>(<span class="pl-s"><span class="pl-pds">'</span>../auth<span class="pl-pds">'</span></span>);
+
+<span class="pl-k">var</span> m <span class="pl-k">=</span> <span class="pl-smi">m360</span>.<span class="pl-en">RestAPI</span>({
+  authId<span class="pl-k">:</span> <span class="pl-smi">auth</span>.<span class="pl-smi">authId</span>,
+  authToken<span class="pl-k">:</span> <span class="pl-smi">auth</span>.<span class="pl-smi">authToken</span>
+});
+
+<span class="pl-k">var</span> params <span class="pl-k">=</span> {
+  <span class="pl-s"><span class="pl-pds">'</span>body<span class="pl-pds">'</span></span> <span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">'</span>xx xx xx<span class="pl-pds">'</span></span>,
+  <span class="pl-s"><span class="pl-pds">'</span>to<span class="pl-pds">'</span></span><span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">'</span>xxxxxxxxxx<span class="pl-pds">'</span></span>, <span class="pl-c">//required // The phone numer to which the all has to be placed</span>
+  <span class="pl-s"><span class="pl-pds">'</span>from<span class="pl-pds">'</span></span> <span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">'</span>xxxxxxxxxx<span class="pl-pds">'</span></span>, <span class="pl-c">//required // The phone number to be used as the caller id</span>
+  <span class="pl-s"><span class="pl-pds">'</span>method<span class="pl-pds">'</span></span> <span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">'</span><span class="pl-pds">'</span></span>, <span class="pl-c">//optional //Allowed Value: POST or GET </span>
+  <span class="pl-s"><span class="pl-pds">'</span>fromcountrycode<span class="pl-pds">'</span></span> <span class="pl-k">:</span> <span class="pl-c1">1</span>, <span class="pl-c">//required //Please enter FromCountryCode number with country code.(i.e 1) </span>
+  <span class="pl-s"><span class="pl-pds">'</span>tocountrycode<span class="pl-pds">'</span></span> <span class="pl-k">:</span> <span class="pl-c1">1</span> <span class="pl-c">//required //Please enter ToCountryCode number with country code.(i.e 1)</span>
+};
+
+<span class="pl-c">// Prints the complete response</span>
+<span class="pl-smi">m</span>.<span class="pl-en">send_message</span>(params, <span class="pl-k">function</span> (<span class="pl-smi">status</span>, <span class="pl-smi">response</span>) {
+    <span class="pl-en">console</span>.<span class="pl-c1">log</span>(<span class="pl-s"><span class="pl-pds">'</span>API Response:<span class="pl-cce">\n</span><span class="pl-pds">'</span></span>, <span class="pl-smi">JSON</span>.<span class="pl-en">stringify</span>(response));</pre></div>
 
 <p>An account for Message360 is free to sign up for at <a href="https://api.message360.com">https://api.message360.com</a></p>
 
@@ -61,13 +69,16 @@
 <a id="company-information" class="anchor" href="#company-information" aria-hidden="true"><span class="octicon octicon-link"></span></a>Company Information</h3>
 
 <p>© 2015 Ytel, Inc. | Ytel™ All Rights Reserved. | 800.382.4913 | <a href="http://www.ytel.com">www.ytel.com</a></p>
-      </section>
-      <footer>
-        <p><small>Hosted on <a href="https://pages.github.com">GitHub Pages</a> using the Dinky theme</small></p>
+
+      <footer class="site-footer">
+        <span class="site-footer-owner"><a href="https://github.com/Ytel-Inc/Message360-NodeJS-Helper-Library">Message360-nodejs-helper-library</a> is maintained by <a href="https://github.com/Ytel-Inc">Ytel-Inc</a>.</span>
+
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
       </footer>
-    </div>
-    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
-		          <script type="text/javascript">
+
+    </section>
+
+            <script type="text/javascript">
             var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
             document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
           </script>
