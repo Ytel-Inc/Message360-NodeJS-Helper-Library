@@ -5,8 +5,28 @@
 ### Welcome to the Message360 NodeJS Helper Library
 This is home to the Official Java Message360 REST API. 
 
-```
-Sample Code Here
+```javascript
+var m360 = require('m360');
+var auth = require('../auth');
+
+var m = m360.RestAPI({
+  authId: auth.authId,
+  authToken: auth.authToken
+});
+
+var params = {
+  'body' : 'xx xx xx',
+  'to': 'xxxxxxxxxx', //required // The phone numer to which the all has to be placed
+  'from' : 'xxxxxxxxxx', //required // The phone number to be used as the caller id
+  'method' : '', //optional //Allowed Value: POST or GET 
+  'fromcountrycode' : 1, //required //Please enter FromCountryCode number with country code.(i.e 1) 
+  'tocountrycode' : 1 //required //Please enter ToCountryCode number with country code.(i.e 1)
+};
+
+// Prints the complete response
+m.send_message(params, function (status, response) {
+    console.log('API Response:\n', JSON.stringify(response));
+
 ```
 
 An account for Message360 is free to sign up for at [https://api.message360.com](https://api.message360.com)
