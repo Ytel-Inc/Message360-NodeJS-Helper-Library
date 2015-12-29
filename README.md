@@ -3,7 +3,7 @@
 ![](http://message360.com/wordpress/wp-content/uploads/2014/08/message360.png)
 
 ### Welcome to the Message360 NodeJS Helper Library
-This is home to the Official Java Message360 REST API. 
+This is home to the Official NodeJS Message360 REST API. 
 
 ```javascript
 var m360 = require('m360');
