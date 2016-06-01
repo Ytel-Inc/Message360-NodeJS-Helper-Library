@@ -1,6 +1,6 @@
 /**
   * @author : Ytel
-  * @version : V1b
+  * @version : v2
   * @description : Shows info on all carrier lookups associated with your Message360 account.
   */
 

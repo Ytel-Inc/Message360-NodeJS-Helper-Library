@@ -9,8 +9,8 @@ var doc = xmlBuilder.create();
 var m360 = {};
 
 m360.options = {};
-m360.options.host = 'api-dev.message360.com';
-m360.options.version = 'v1b';
+m360.options.host = 'api.message360.com';
+m360.options.version = 'v2';
 m360.options.authId = '';
 m360.options.authToken = '';
 
@@ -252,7 +252,7 @@ m360.voice_effect = function (params, callback) {
 
 //Conference
 m360.view_conference = function (params, callback) {
-    var action = 'conferences/viewconference/'+params['conferencesid'];
+    var action = 'conferences/viewconference/'+params['conferenceid'];
     var method = 'GET';
 
     request(action, method, params, callback);
@@ -324,7 +324,7 @@ m360.list_recording = function (params, callback) {
 }; 
 
 m360.delete_recording = function (params, callback) {
-    var action = 'recording/deleterecording/'+params['recordingSid'];;
+    var action = 'recording/deleterecording/'+params['recordingsid'];;
     var method = 'GET';
 
     request(action, method, params, callback);
@@ -370,7 +370,7 @@ m360.list_available_numbers = function (params, callback) {
 };
 
 m360.view_numbers = function (params, callback) {
-    var action = 'incomingphone/viewnumber/'+params['incomingphonenumber'];
+    var action = 'incomingphone/viewnumber/'+params['phonenumber'];
     var method = 'GET';
 
     request(action, method, params, callback);
@@ -398,7 +398,7 @@ m360.update_number = function (params, callback) {
 };
 
 m360.release_number = function (params, callback) {
-    var action = 'incomingphone/updatenumber/'+params['phonenumber'];
+    var action = 'incomingphone/releasenumber/'+params['phonenumber'];
     var method = 'GET';
 
     request(action, method, params, callback);
@@ -490,12 +490,6 @@ m360.delete_unsubscribe = function (params, callback) {
 };
 
 //Carrier
-m360.carrier_lookup = function (params, callback) {
-    var action = 'carrier/lookup';
-    var method = 'GET';
-
-    request(action, method, params, callback);
-};
 
 m360.carrier_lookup_list = function (params, callback) {
     var action = 'carrier/lookuplist';
@@ -504,6 +498,12 @@ m360.carrier_lookup_list = function (params, callback) {
     request(action, method, params, callback);
 };
 
+m360.carrier_lookup = function (params, callback) {
+    var action = 'carrier/lookup';
+    var method = 'GET';
+
+    request(action, method, params, callback);
+};
 
 /**
  * XML Response Generation

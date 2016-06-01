@@ -1,6 +1,6 @@
 /**
   * @author : Ytel
-  * @version : V1b
+  * @version : v2
   * @description : Here you can experiment with transcribing recordings that have occurred through your message360 account and view the request response generated when doing so.
   */
 

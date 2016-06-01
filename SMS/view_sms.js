@@ -1,6 +1,6 @@
 /**
   * @author : Ytel
-  * @version : V1b
+  * @version : v2
   * @description : The response returned here contains all resource properties associated with the given SMSMessageSid.
   */
 
@@ -13,7 +13,7 @@ var m = m360.RestAPI({
 });
 
 var params = {
-    'MessageSid': 'xxxxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx' //required //An alphanumeric string identifying this resource.
+    'messagesid': 'xxxxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx' //required //An alphanumeric string identifying this resource.
 };
 
 // Prints the complete response

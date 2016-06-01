@@ -1,6 +1,6 @@
 /**
   * @author : Ytel
-  * @version : V1b
+  * @version : v2
   * @description : Here you can experiment with playing audio to conference participants.
   */
 
@@ -13,7 +13,7 @@ var m = m360.RestAPI({
 });
 
 var params = {
-    'conferencesid': 'xxxxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx' //required //An alphanumeric string identifying this resource. 
+    'conferenceid': 'xxxxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx' //required //An alphanumeric string identifying this resource. 
 };
 
 // Prints the complete response

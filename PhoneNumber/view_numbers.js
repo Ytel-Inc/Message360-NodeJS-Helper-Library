@@ -1,6 +1,6 @@
 /**
   * @author : Ytel
-  * @version : V1b
+  * @version : v2
   * @description : The response returned here contains all resource properties associated with the requested Message360 phone number.
   */
 
@@ -13,7 +13,7 @@ var m = m360.RestAPI({
 });
 
 var params = {
-    'incomingphonenumber': 'xxxxxxxxxx' //required //You can view the specfic information about Phone number.
+    'phonenumber': 'xxxxxxxxxx' //required //You can view the specfic information about Phone number.
 };
 
 // Prints the complete response

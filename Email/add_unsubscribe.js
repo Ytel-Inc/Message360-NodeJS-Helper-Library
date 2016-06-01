@@ -1,6 +1,6 @@
 /**
   * @author : Ytel
-  * @version : V1b
+  * @version : v2
   * @description : Add email addresses to the Unsubscribe list.
   */
 
@@ -13,7 +13,7 @@ var m = m360.RestAPI({
 });
 
 var params = {
-    'email': 'test@test.com' //required //Must be a valid email address.Email address to add in unsubscribe list. 
+    'email': 'mohanish@ytel.co.in' //required //Must be a valid email address.Email address to add in unsubscribe list. 
 };
 
 // Prints the complete response

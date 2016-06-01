@@ -1,6 +1,6 @@
 /**
   * @author : Ytel
-  * @version : V1b
+  * @version : v2
   * @description : The request response returned here contains a list of all recordings that have occurred through your Message360 account.
   */
 
