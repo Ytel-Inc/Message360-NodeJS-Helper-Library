@@ -1,6 +1,6 @@
 /**
   * @author : Ytel
-  * @version : V1b
+  * @version : v2
   * @description : The response returned here contains all resource properties associated with the given RecordingSid.
   */
 

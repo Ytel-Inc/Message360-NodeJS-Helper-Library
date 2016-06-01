@@ -1,6 +1,6 @@
 /**
   * @author : Ytel
-  * @version : V1b
+  * @version : v2
   * @description : This endpoint allows you to send email.
   */
 
@@ -13,12 +13,12 @@ var m = m360.RestAPI({
 });
 
 var params = {
-    'To': 'test@test.com', //required //Must be a valid email address.Email address to send email.For multpile recipients,emails must be separated by commas. 
+    'To': 'xx@xx.xx', //required //Must be a valid email address.Email address to send email.For multpile recipients,emails must be separated by commas. 
     'cc' : '', //optional //Must be a valid email address.Email address to send email.For multpile recipients,emails must be separated by commas. 
     'bcc' : '', //optional //Must be a valid email address.Email address to send email.For multpile recipients,emails must be separated by commas. 
-    'subject' : 'test', //required //Must be a valid string.The subject of your email. 
+    'subject' : 'xxxx', //required //Must be a valid string.The subject of your email. 
     'type' : '', //required // It should be Text or Html 
-    'message' : 'test message', //required //The Message of your email. 
+    'message' : 'xx xx xx', //required //The Message of your email. 
     'attachment[]' : '' //optional //File to be attached.File must be less than or equal to 2MB. 
 
 };

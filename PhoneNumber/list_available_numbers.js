@@ -1,6 +1,6 @@
 /**
   * @author : Ytel
-  * @version : V1b
+  * @version : v2
   * @description : The request response returned here contains a list of all available phone numbers that can be purchased for use with your Message360 account.
   */
 
@@ -13,10 +13,10 @@ var m = m360.RestAPI({
 });
 
 var params = {
-    'areacode': '', //optional //Specifies the area code that the returned list of available numbers should be in. Only available for North American numbers 
+    'areacode': '{all}', //optional //Specifies the area code that the returned list of available numbers should be in. Only available for North American numbers 
     'region' : '', //optional //The region of the available phone number. Usually a two letter abbreviation. 
-    'numbertype' : '', //required //Specifies the number type is Voice,SMS,Voice and SMS.    e.g. voice
-    'pagesize' : '' //optional //Used to return a particular page within
+    'numbertype' : '{all}', //required //Specifies the number type is Voice,SMS,Voice and SMS.    e.g. voice
+    'pagesize' : '{xx}' //optional //Used to return a particular page within
 };
 
 // Prints the complete response

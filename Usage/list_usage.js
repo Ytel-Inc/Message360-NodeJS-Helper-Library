@@ -1,6 +1,6 @@
 /**
   * @author : Ytel
-  * @version : V1b
+  * @version : v2
   * @description : The request response returned here contains a list of usages resources associated with your message360 account. 
   */
 
@@ -13,9 +13,9 @@ var m = m360.RestAPI({
 });
 
 var params = {
-    'ProductCode': 1, //optional // Allowed value 1-13
-    'startDate' : 'xxxx-xx-xx xx:xx:xx', //optional //Select from which date searching should start. yyyy-mm-dd
-    'endDate' : 'xxxx-xx-xx xx:xx:xx' //optional //Select date to which searching should end. yyyy-mm-dd
+    'ProductCode': 0, //optional // Allowed value 0-13
+    'startDate' : 'xxxx-xx-xx', //optional //Select from which date searching should start. yyyy-mm-dd
+    'endDate' : 'xxxx-xx-xx' //optional //Select date to which searching should end. yyyy-mm-dd
 }; 
 
 // Prints the complete response

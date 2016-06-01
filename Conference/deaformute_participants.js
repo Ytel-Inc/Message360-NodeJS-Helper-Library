@@ -1,6 +1,6 @@
 /**
   * @author : Ytel
-  * @version : V1b
+  * @version : v2
   * @description : Here you can experiment with the deaf or mute conference participant API methods.
   */
 

@@ -1,6 +1,6 @@
 /**
   * @author : Ytel
-  * @version : V1b
+  * @version : v2
   * @description : This endpoint allows you to retrieve entries in the spam reports list. 
   */
 
@@ -13,7 +13,7 @@ var m = m360.RestAPI({
 });
 
 var params = {
-    'email': 'test@test.com' //required //Must be a valid user account email.Bounced email address to remove. 
+    'email': 'xx@xx.xx' //required //Must be a valid user account email.Bounced email address to remove. 
 };
 
 // Prints the complete response

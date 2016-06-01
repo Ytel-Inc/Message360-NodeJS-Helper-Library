@@ -1,6 +1,6 @@
 /**
   * @author : Ytel
-  * @version : V1b
+  * @version : v2
   * @description : A call resource provides information about an individual call that has occurred through Message360. Both inbound and outbound voice communication through Message360 are categorized as calls. The resource properties representing a call are listed below. Call resources can be accessed at a resource URI made up of the Message360 base URL and a unique call SID.
   */
 

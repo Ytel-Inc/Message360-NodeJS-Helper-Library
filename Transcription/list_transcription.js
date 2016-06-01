@@ -1,6 +1,6 @@
 /**
   * @author : Ytel
-  * @version : V1b
+  * @version : v2
   * @description : The request response returned here contains a list of transcriptions that have occurred through your message360 account.
   */
 

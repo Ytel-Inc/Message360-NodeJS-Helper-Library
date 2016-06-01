@@ -1,6 +1,6 @@
 /**
   * @author : Ytel
-  * @version : V1b
+  * @version : v2
   * @description : Here you can experiment with sending an sms through Message360 and view the request response generated when doing so.
   */
 
@@ -18,7 +18,8 @@ var params = {
   'from' : 'xxxxxxxxxx', //required // The phone number to be used as the caller id
   'method' : '', //optional //Allowed Value: POST or GET 
   'fromcountrycode' : 1, //required //Please enter FromCountryCode number with country code.(i.e 1) 
-  'tocountrycode' : 1 //required //Please enter ToCountryCode number with country code.(i.e 1)
+  'tocountrycode' : 1, //required //Please enter ToCountryCode number with country code.(i.e 1)
+  'messagestatuscallback' :  '' //optional //URL that can be requested to receive notification when SMS has been sent. A set of default parameters will be sent here once the SMS is sent. 
 };
 
 // Prints the complete response

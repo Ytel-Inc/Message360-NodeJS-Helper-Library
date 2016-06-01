@@ -1,6 +1,6 @@
 /**
   * @author : Ytel
-  * @version : V1b
+  * @version : v2
   * @description : The request response returned here contains a list of all conferences associated with an account.
   */
 

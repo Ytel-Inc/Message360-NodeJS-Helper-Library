@@ -1,6 +1,6 @@
 /**
   * @author : Ytel
-  * @version : V1b
+  * @version : v2
   * @description : Message360 allows you to play an audio file during a call. This is useful for playing hold music, providing IVR prompts, etc.
   */
 
@@ -13,7 +13,7 @@ var m = m360.RestAPI({
 });
 
 var params = {
-  'callsid': 'xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx', // An alphanumeric string identifying this resource. 
+  'CallSid': 'xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx', //required An alphanumeric string identifying this resource. 
 	'Mix' : '', //optional //Allowed Value: false,true
 	'Length' : '', //optional //Allowed Value: integer greater than or equal to 0
 	'Loop' : '', //optional //Allowed Value: false,true

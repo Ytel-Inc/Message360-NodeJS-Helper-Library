@@ -1,6 +1,6 @@
 /**
   * @author : Ytel
-  * @version : V1b
+  * @version : v2
   * @description : This endpoint allows you to retrieve entries in the unsubscribes list.
   */
 
