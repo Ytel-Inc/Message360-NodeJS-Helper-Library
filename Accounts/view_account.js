@@ -12,7 +12,9 @@ var m = m360.RestAPI({
   authToken: auth.authToken
 });
 
-var params = "";
+var params = {
+    'date': 'xxxx-xx-xx' //required //To view the account usage of user.
+};
 
 // Prints the complete response
 m.get_account(params, function (status, response) {
