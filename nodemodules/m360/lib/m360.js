@@ -142,7 +142,7 @@ m360.middleware = function(options) {
 
 // Accounts
 m360.get_account = function (params, callback) {
-    var action = 'accounts/viewaccount';
+    var action = 'accounts/viewaccount/'+params['date'];
     var method = 'GET';
 
     request(action, method, params, callback, true);
